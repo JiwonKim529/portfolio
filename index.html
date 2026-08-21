@@ -268,6 +268,10 @@
     letter-spacing:0.06em;text-transform:uppercase;color:var(--teal);}
   .pub-card h4{font-size:14.5px;margin-top:10px;line-height:1.4;}
   .pub-card .why{font-size:12px;color:var(--muted);font-style:italic;margin-top:8px;line-height:1.5;}
+  .pub-card .doi{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px solid var(--line);}
+  .pub-card .doi a{color:var(--teal);text-decoration:none;}
+  .pub-card .doi a:hover{text-decoration:underline;}
+  .pub-card .doi.pending{font-style:italic;color:#9aa1b0;}
 
   .award-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
   .award-card{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff;}
@@ -664,7 +668,7 @@
       <div class="section-head">
         <p class="eyebrow">Project Portfolio</p>
         <h2>More projects, by track</h2>
-        <p class="lede">Seven additional projects spanning AI-enabled learning, instructional design, and data
+        <p class="lede">Six additional projects spanning AI-enabled learning, instructional design, and data
           analytics. Filter by track, or browse everything.</p>
       </div>
 
@@ -676,7 +680,7 @@
           <button class="mini-chip tag-program" data-tag="program" aria-pressed="false">Program</button>
           <button class="clear-link" id="clearFilters">Clear filters</button>
         </div>
-        <div class="result-count" id="resultCount">Showing 7 of 7 projects</div>
+        <div class="result-count" id="resultCount">Showing 6 of 6 projects</div>
       </div>
 
       <div class="projects-grid" id="projectsGrid">
@@ -767,26 +771,6 @@
           </div></div>
         </article>
 
-        <article class="pcard" data-tags="design data">
-          <div class="pcard-top">
-            <div class="picon" style="background:var(--gold);"><i class="fa-solid fa-gear"></i></div>
-            <div class="pcard-tags"><span class="tag-pill tag-design">Design</span><span class="tag-pill tag-data">Data</span></div>
-          </div>
-          <h4>ECE Course Redesign</h4>
-          <p class="pmeta">Purdue University &bull; Engineering Education</p>
-          <p class="pcontext">Sophomore-level Electrical &amp; Computer Engineering courses had high dropout rates and
-            inconsistent student experiences.</p>
-          <button class="details-toggle" aria-expanded="false"><i class="fa-solid fa-chevron-down"></i> What I did</button>
-          <div class="details-panel" data-open="false"><div class="details-panel-inner">
-            <ul>
-              <li>Reverse-engineered the curriculum using the Content-Assessment-Pedagogy (CAP) framework</li>
-              <li>Conducted SME interviews with faculty and TAs to surface root causes</li>
-              <li>Collected student feedback via survey and interview</li>
-              <li>Ran multifaceted data analysis across content, assessment, and pedagogy dimensions</li>
-            </ul>
-          </div></div>
-        </article>
-
         <article class="pcard" data-tags="data program">
           <div class="pcard-top">
             <div class="picon" style="background:var(--teal);"><i class="fa-solid fa-network-wired"></i></div>
@@ -844,31 +828,38 @@
           <div class="venue"><i class="fa-solid fa-book-open"></i> Int'l Journal of STEM Education (in progress)</div>
           <h4>Basic Quantum Concepts (BQC)-Embedded Science Curriculum for 6th Grade</h4>
           <p class="why">Evidence that quantum concepts can be taught — and measured — in middle school.</p>
+          <p class="doi pending">DOI: pending publication</p>
         </div>
         <div class="pub-card">
           <div class="venue"><i class="fa-solid fa-book-open"></i> IEEE Transactions on Learning Technologies, 2025</div>
           <h4>Cognitive Engagement and Humanness of Chatbots on Learning Outcomes</h4>
           <p class="why">What makes an AI tutor's "humanness" actually help — or not — learning.</p>
+          <p class="doi">DOI: <a href="https://doi.org/10.1109/TLT.2025.3577950" target="_blank" rel="noopener">10.1109/TLT.2025.3577950</a></p>
         </div>
         <div class="pub-card">
           <div class="venue"><i class="fa-solid fa-book-open"></i> Computers and Education: AI, 2025</div>
           <h4>Enhancing Student Reflections with NLP-Based Scaffolding</h4>
           <p class="why">NLP-scaffolded reflection improves outcomes in large lecture courses.</p>
+          <p class="doi">DOI: <a href="https://doi.org/10.1016/j.caeai.2025.100397" target="_blank" rel="noopener">10.1016/j.caeai.2025.100397</a></p>
         </div>
         <div class="pub-card">
-          <div class="venue"><i class="fa-solid fa-book-open"></i> Int'l Journal of Human-Computer Interaction, 2023</div>
+          <div class="venue"><i class="fa-solid fa-book-open"></i> Int'l Journal of Human-Computer Interaction, 2024</div>
           <h4>Narrative Features and Thematic Music in an Audio-Based Exergame</h4>
           <p class="why">Design choices that keep users engaged in voice-based fitness apps.</p>
+          <p class="doi">DOI: <a href="https://doi.org/10.1080/10447318.2023.2255412" target="_blank" rel="noopener">10.1080/10447318.2023.2255412</a></p>
         </div>
         <div class="pub-card">
           <div class="venue"><i class="fa-solid fa-book-open"></i> Education and Information Technologies, 2023</div>
           <h4>Prompt Aloud! Generative AI in a STEAM Classroom</h4>
           <p class="why">How image-generative AI can be taught responsibly in K-12 STEM/art.</p>
+          <p class="doi">DOI: <a href="https://doi.org/10.1007/s10639-023-12150-4" target="_blank" rel="noopener">10.1007/s10639-023-12150-4</a></p>
         </div>
         <div class="pub-card">
           <div class="venue"><i class="fa-solid fa-book-open"></i> ACM CHI Conference, 2023</div>
           <h4>Geometric Features of Drag-and-Drop Trajectories</h4>
           <p class="why">What touchscreen interaction patterns reveal about how children learn.</p>
+          <p class="doi">DOI: <a href="https://doi.org/10.1145/3544548.3581143" target="_blank" rel="noopener">10.1145/3544548.3581143</a></p>
+
         </div>
       </div>
     </div>
@@ -1031,6 +1022,7 @@
     syncButtons();
     applyFilter();
   });
+  applyFilter(); // sync the count on initial load, independent of card total
 
   // ---- Project card accordions ----
   document.querySelectorAll('.details-toggle').forEach(function(btn){
